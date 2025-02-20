@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
-/* Reset básico */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+body {
+  font-family: "Montserrat", serif;
+  color: #262626;
 }
 
-/* Textos */
-body {
-  font-family: "Roboto", serif;
-  color: #262626;
+html {
+  scroll-behavior: smooth;
 }

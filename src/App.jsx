@@ -11,16 +11,14 @@ import Footer from './pages/Footer/Footer'
 function App() {
 
   return (
-    <>
-      <div>
-        <Navbar />
-        <HeroSection />
-        <Services />
-        <About />
-        <ContactForm />
-        <Footer />
-      </div>
-    </>
+    <div className="">
+      <Navbar />
+      <HeroSection />
+      <Services />
+      <About />
+      <ContactForm />
+      <Footer />
+    </div>
   )
 }
 
