@@ -16,18 +16,18 @@ const ContactForm = () => {
             </div>
 
             <div>
-                <h2 className="text-3xl mb-6 text-center">Contáctanos</h2>
+                <h2 className="lg:text-4xl md:text-2xl font-bold text-gray-800text-3xl mb-20 text-center">Contáctanos</h2>
                 <form className="max-w-lg mx-auto space-y-6">
-                    <label htmlFor="name" className="block text-lg">Nombre</label>
-                    <input type="text" id="name" name="name" className="w-full p-4 border border-gray-300 rounded" required />
+                    <label htmlFor="name" className="block lg:text-xl md:text-m">Nombre</label>
+                    <input type="text" id="name" name="name" className="lg:w-full md:w-l p-4 border border-gray-300 rounded" required />
 
-                    <label htmlFor="email" className="block text-lg">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" className="w-full p-4 border border-gray-300 rounded" required />
+                    <label htmlFor="email" className="block lg:text-xl md:text-m">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" className="lg:w-full md:w-l p-4 border border-gray-300 rounded" required />
 
-                    <label htmlFor="message" className="block text-lg">Mensaje</label>
-                    <textarea id="message" name="message" className="w-full p-4 border border-gray-300 rounded" required></textarea>
+                    <label htmlFor="message" className="block lg:text-xl md:text-m">Mensaje</label>
+                    <textarea id="message" name="message" className="lg:w-full md:w-l p-6 border border-gray-300 rounded" required></textarea>
 
-                    <button type="submit" className="bg-yellow-500 text-white py-2 px-6 text-lg rounded hover:bg-yellow-700 hover:cursor-pointer">Enviar Mensaje</button>
+                    <button type="submit" className="bg-yellow-500 text-white py-2 px-6 lg:text-xl md:text-m rounded hover:bg-yellow-700 hover:cursor-pointer">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
