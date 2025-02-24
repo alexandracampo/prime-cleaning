@@ -2,74 +2,49 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import useScreenWidth from '../../hooks/useScreenWidth'
 import iconMenu from '../../../public/menu.png'
+import Menu from './components/menu';
 
 const Navbar = () => {
 
-    const width = useScreenWidth(); // Obtiene el ancho de pantalla
-    const isMobile = width < 768; // Define si es móvil
-    const [menuOpen, setMenuOpen] = useState(false); // Estado para el menú móvil
+    const isMobile = useScreenWidth() < 768; // Obtiene el ancho de pantalla
+    const [menuOpen, setMenuOpen] = useState(false);
 
+    const handleMenu = () => {
+        setMenuOpen(!menuOpen)
+    }
 
     return (
-        <header className="fixed top-0 left-0 w-full bg-white backdrop-blur-md shadow-md z-50 p-4 h-24">
-            <div className="max-w-screen-xl mx-auto flex items-center justify-between w-full">
+        <header className="fixed top-0 left-0 w-full pt-3 bg-white backdrop-blur-md shadow-md z-50 h-24 ">
+            <div className="flex pr-5 justify-between md:items-center px-5">
 
                 {/* imagen */}
-                <div className="flex items-center md:ml-6 lg:ml-0 ">
-                    <img src='../../../public/logo.jpg' className="md:w-40 lg:w-48 md:mt-2 lg:mt-0"  ></img>
+                <div className="flex items-center mt-2 md:ml-6 lg:ml-0  ">
+                    <img
+                        onClick={() => {
+                            document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        src='../../../public/logo.jpg'
+                        className="w-40 md:w-40 lg:w-48 md:mt-2 lg:mt-0" />
                 </div>
 
                 {/* Menú navegación */}
-                {isMobile ?
-                    (
-                        <button >
-                            <img src='../../../public/menu.png' ></img>
+                {isMobile &&
+                    <>
+                        <button className={menuOpen ? 'w-12 hover:cursor-pointer' : 'w-8 hover:cursor-pointer'} onClick={handleMenu}>
+                            <img src={menuOpen ? '../../../public/cross.png' : '../../../public/menu.png'} />
                         </button>
-                    )
-                    :
-                    (
-                        <nav className='md:mr-10 lg:mr-0'>
-                            <ul className="flex space-x-8">
-                                <li>
-                                    <a
-                                        href="#home"
-                                        className="text-gray-800 lg:text-lg relative group"
-                                    >
-                                        Inicio
-                                        <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#services"
-                                        className="text-gray-800 lg:text-lg relative group"
-                                    >
-                                        Servicios
-                                        <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#about"
-                                        className="text-gray-800 lg:text-lg relative group"
-                                    >
-                                        Sobre Nosotros
-                                        <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#contact"
-                                        className="text-gray-800lg:text-lg relative group"
-                                    >
-                                        Contacto
-                                        <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    )}
+                    </>
+                }
+
+                {!isMobile && <Menu />}
             </div>
+
+            {menuOpen && (<Menu menuOpen={menuOpen} isMobile={isMobile} />)}
+
+
+
+
+
         </header>
 
 

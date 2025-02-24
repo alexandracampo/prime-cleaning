@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
 import useSmoothScroll from '../../hooks/useSmoothScroll';
 
-
 const About = () => {
 
     useSmoothScroll();
 
     return (
-        <section id="about" className="h-[calc(100vh)] bg-gray-200 flex flex-col justify-center items-center">
-            <h2 className="lg:text-4xl md:text-2xl font-bold text-gray-800 mb-12">Sobre Nosotros</h2>
+        <section id="about" className="h-[calc(100vh)] bg-gray-200 flex flex-col justify-center items-center p-8">
+            <h2 className="text-base lg:text-4xl md:text-2xl font-bold text-gray-800 mb-12">Sobre Nosotros</h2>
             <p className="lg:text-xl md:text-m text-gray-600 max-w-3xl mb-6 lg:mx-6 md:mx-24">
                 Prime Cleaning nació como un negocio familiar con una visión clara: ofrecer servicios de limpieza excepcionales con un trato cercano y profesional.
                 Fundada hace más de dos décadas por la familia Pérez, la empresa comenzó con un pequeño equipo apasionado por la limpieza y la satisfacción del cliente.
