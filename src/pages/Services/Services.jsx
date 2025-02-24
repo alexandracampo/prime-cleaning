@@ -22,7 +22,7 @@ const Services = () => {
                 </div>}
 
             {/* Resumen de servicios */}
-            <div className="grid gap-6 lg:px-10 md:px-10 start-0">
+            <div className="grid gap-6 lg:px-20 md:px-10 start-0">
                 <div className="flex flex-col items-center md:items-start text-center md:text-left">
                     <h2 className="text-base font-bold text-gray-800 mb-6 lg:text-2xl md:text-xl">Servicios que ofrecemos</h2>
                     <p className="text-base lg:text-xl md:text-m text-gray-600 mb-6">
