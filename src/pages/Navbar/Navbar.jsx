@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     return (
-        <header className="fixed top-0 left-0 w-full pt-3 bg-white backdrop-blur-md shadow-md z-50 h-24 ">
+        <header className="fixed top-0 left-0 w-full pt-3 md:pt-2 bg-white backdrop-blur-md shadow-md z-50 h-24 ">
             <div className="flex pr-5 justify-between md:items-center px-5">
 
                 {/* imagen */}
