@@ -28,7 +28,7 @@ const HeroSection = () => {
                     <img
                         src="../../../public/limpieza9.jpg"
                         alt="Servicio de limpieza"
-                        className="w-3/4 md:w-full max-w-md md:max-w-none max-h-[100vh]  shadow-lg object-cover"
+                        className="w-3/4 md:w-full max-w-md md:max-w-none max-h-[100vh] shadow-lg object-cover"
                     />
                 </div>
             )

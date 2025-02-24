@@ -30,7 +30,7 @@ const ContactForm = () => {
                 <h2 className="text-2xl lg:text-4xl md:text-2xl font-bold text-gray-800text-3xl mb-20 text-center">Contáctanos</h2>
                 <form className="max-w-lg mx-auto space-y-6">
                     <label htmlFor="name" className="block lg:text-xl md:text-m">Nombre</label>
-                    <input type="text" id="name" name="name" className="w-[80%] md:w-l p-4 border border-gray-300 rounded bg-amber-50" required />
+                    <input type="text" id="name" name="name" className="w-[80%] lg:w-full md:w-l p-4 border border-gray-300 rounded bg-amber-50" required />
 
                     <label htmlFor="email" className="block lg:text-xl md:text-m">Correo Electrónico</label>
                     <input type="email" id="email" name="email" className="w-[80%] lg:w-full md:w-l p-4 border border-gray-300 rounded bg-amber-50" required />
