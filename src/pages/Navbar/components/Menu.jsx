@@ -41,7 +41,7 @@ const Menu = ({ menuOpen, isMobile }) => {
                     <li>
                         <a
                             href="#contact"
-                            className="text-gray-800lg:text-lg relative group"
+                            className="text-gray-800 lg:text-lg relative group"
                         >
                             Contacto
                             <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
