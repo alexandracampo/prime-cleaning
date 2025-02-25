@@ -9,12 +9,8 @@ const Navbar = () => {
     const isMobile = useScreenWidth() < 768; // Obtiene el ancho de pantalla
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleMenu = () => {
-        setMenuOpen(!menuOpen)
-    }
-
     return (
-        <header className="fixed top-0 left-0 w-full pt-3 md:pt-2 bg-white backdrop-blur-md shadow-md z-50 h-24 ">
+        <header className="fixed top-0 left-0 w-full pt-3 md:pt-2 bg-white backdrop-blur-md shadow-md z-50 h-24">
             <div className="flex pr-5 justify-between md:items-center px-5">
 
                 {/* imagen */}
@@ -30,7 +26,7 @@ const Navbar = () => {
                 {/* Menú navegación */}
                 {isMobile &&
                     <>
-                        <button className={menuOpen ? 'w-12 hover:cursor-pointer' : 'w-8 hover:cursor-pointer'} onClick={handleMenu}>
+                        <button className={menuOpen ? 'w-12 hover:cursor-pointer' : 'w-8 hover:cursor-pointer'} onClick={() => setMenuOpen(!menuOpen)}>
                             <img src={menuOpen ? '../../../public/cross.png' : '../../../public/menu.png'} />
                         </button>
                     </>
@@ -39,11 +35,7 @@ const Navbar = () => {
                 {!isMobile && <Menu />}
             </div>
 
-            {menuOpen && (<Menu menuOpen={menuOpen} isMobile={isMobile} />)}
-
-
-
-
+            {menuOpen && (<Menu menuOpen={menuOpen} isMobile={isMobile} setMenuOpen={setMenuOpen} />)}
 
         </header>
 
