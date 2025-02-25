@@ -17,7 +17,7 @@ Prime Cleaning es una página web para una empresa de limpieza. El proyecto est�
 
 ## Instalación
 
-#### 1. Clonar el Repositorio: `git clone https://github.com/tu-usuario/prime-cleaning.git`
+#### 1. Clonar el Repositorio: `git clone https://github.com/alexandracampo/prime-cleaning.git`
 
 #### 2. Accede al directorio del proyecto clonado: `cd prime-cleaning`
 
