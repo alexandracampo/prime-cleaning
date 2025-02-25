@@ -10,15 +10,15 @@ const HeroSection = () => {
     const isMobile = useScreenWidth() < 768;
 
     const images = [
-        "../../../limpieza9.jpg",
-        "../../../limpieza1.jpg",
-        "../../../limpieza2.jpg",
-        "../../../limpieza8.jpg",
-        "../../../limpieza3.jpg",
-        "../../../limpieza4.jpg",
-        "../../../limpieza5.jpg",
-        "../../../limpieza7.jpg",
-        "../../../limpieza10.jpg",
+        "/prime-cleaning/public/limpieza9.jpg",
+        "/prime-cleaning/public/limpieza1.jpg",
+        "/prime-cleaning/public/limpieza2.jpg",
+        "/prime-cleaning/public/limpieza8.jpg",
+        "/prime-cleaning/public/limpieza3.jpg",
+        "/prime-cleaning/public/limpieza4.jpg",
+        "/prime-cleaning/public/limpieza5.jpg",
+        "/prime-cleaning/public/limpieza7.jpg",
+        "/prime-cleaning/public/limpieza10.jpg",
     ];
 
     return (
@@ -32,7 +32,7 @@ const HeroSection = () => {
                     <>
                         < div className="flex justify-center h-[calc(100vh)]">
                             <img
-                                src="../../../public/limpieza9.jpg"
+                                src="/prime-cleaning/public/limpieza9.jpg"
                                 alt="Servicio de limpieza"
                                 className="w-3/4 md:w-full max-w-md md:max-w-none max-h-[100vh] shadow-lg object-cover"
                             />

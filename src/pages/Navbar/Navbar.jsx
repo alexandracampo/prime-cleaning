@@ -14,12 +14,12 @@ const Navbar = () => {
             <div className="flex pr-5 justify-between md:items-center px-5">
 
                 {/* imagen */}
-                <div className="flex items-center mt-2 md:ml-6 lg:ml-0  ">
+                <div className="flex items-center mt-2 md:ml-6 lg:ml-0  hover:cursor-pointer">
                     <img
                         onClick={() => {
                             document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
                         }}
-                        src='../../../public/logo.jpg'
+                        src='/prime-cleaning/public/logo.jpg'
                         className="w-40 md:w-40 lg:w-48 md:mt-2 lg:mt-0" />
                 </div>
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                 {isMobile &&
                     <>
                         <button className={menuOpen ? 'w-12 hover:cursor-pointer' : 'w-8 hover:cursor-pointer'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <img src={menuOpen ? '../../../public/cross.png' : '../../../public/menu.png'} />
+                            <img src={menuOpen ? '/prime-cleaning/public/cross.png' : '/prime-cleaning/public/menu.png'} />
                         </button>
                     </>
                 }

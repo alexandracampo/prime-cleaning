@@ -15,7 +15,7 @@ const Menu = ({ menuOpen, isMobile, setMenuOpen }) => {
                         <a
                             href="#home"
                             className="text-gray-800 lg:text-lg relative group"
-                            onClick={() => setMenuOpen(false)}
+                            onClick={() => { if (isMobile) { setMenuOpen(false) } }}
                         >
                             Inicio
                             <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
@@ -25,7 +25,7 @@ const Menu = ({ menuOpen, isMobile, setMenuOpen }) => {
                         <a
                             href="#services"
                             className="text-gray-800 lg:text-lg relative group"
-                            onClick={() => setMenuOpen(false)}
+                            onClick={() => { if (isMobile) { setMenuOpen(false) } }}
                         >
                             Servicios
                             <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
@@ -35,7 +35,7 @@ const Menu = ({ menuOpen, isMobile, setMenuOpen }) => {
                         <a
                             href="#about"
                             className="text-gray-800 lg:text-lg relative group"
-                            onClick={() => setMenuOpen(false)}
+                            onClick={() => { if (isMobile) { setMenuOpen(false) } }}
                         >
                             Sobre Nosotros
                             <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
@@ -45,7 +45,7 @@ const Menu = ({ menuOpen, isMobile, setMenuOpen }) => {
                         <a
                             href="#contact"
                             className="text-gray-800 lg:text-lg relative group"
-                            onClick={() => setMenuOpen(false)}
+                            onClick={() => { if (isMobile) { setMenuOpen(false) } }}
                         >
                             Contacto
                             <span className="absolute left-0 bottom-0 w-0 h-px bg-gray-800 transition-all duration-300 group-hover:w-full"></span>
