@@ -9,7 +9,14 @@ const Services = () => {
     const isMobile = useScreenWidth() < 768;
 
     return (
-        <section id="services" className="h-[calc(100vh)] bg-gray-100 grid grid-cols-1 md:grid-cols-2  items-center text-center p-8 md:p-0">
+        <section
+            id="services"
+            className="h-[calc(100vh)] bg-gray-100 grid grid-cols-1 md:grid-cols-2  items-center text-center p-8 md:p-0"
+            style={isMobile ? {
+                backgroundImage: `url('../../public/servicesBG.png')`,
+                backgroundSize: 'cover',
+            } : {}}
+        >
 
             {/* Sección de imagen */}
             {!isMobile &&
