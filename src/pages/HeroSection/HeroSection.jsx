@@ -28,23 +28,17 @@ const HeroSection = () => {
                 className="h-[calc(100vh)] bg-gray-200 grid grid-cols-1 md:grid-cols-2 items-center text-center"
             >
                 {/* Sección de imagen */}
-                {isMobile ? (
-                    <div
-                        className="absolute inset-0 z-0 bg-cover bg-center"
-                        style={{
-                            // backgroundImage: `url('../../../public/mobileBG.png')`,
-                        }}
-                    />
-                ) : (
-
-                    <div className="flex justify-center h-[calc(100vh)]">
-                        <img
-                            src="../../../public/limpieza9.jpg"
-                            alt="Servicio de limpieza"
-                            className="w-3/4 md:w-full max-w-md md:max-w-none max-h-[100vh] shadow-lg object-cover"
-                        />
-                    </div>
-                )}
+                {!isMobile &&
+                    <>
+                        < div className="flex justify-center h-[calc(100vh)]">
+                            <img
+                                src="../../../public/limpieza9.jpg"
+                                alt="Servicio de limpieza"
+                                className="w-3/4 md:w-full max-w-md md:max-w-none max-h-[100vh] shadow-lg object-cover"
+                            />
+                        </div>
+                    </>
+                }
 
                 {/* Sección de texto */}
                 <div className="flex flex-col items-center text-center px-10 md:items-start lg:items-start md:text-left lg:text-left md:px-20 lg:px-20 z-10 pt-36">
@@ -76,7 +70,7 @@ const HeroSection = () => {
                             ))}
                         </motion.div>
                     </div>}
-            </section>
+            </section >
         </>
     )
 }
