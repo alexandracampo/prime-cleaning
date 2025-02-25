@@ -42,11 +42,11 @@ const HeroSection = () => {
 
                 {/* Sección de texto */}
                 <div className="flex flex-col items-center text-center px-10 md:items-start lg:items-start md:text-left lg:text-left md:px-20 lg:px-20 z-10 pt-36">
-                    <h1 className="text-base lg:text-4xl md:text-2xl font-bold text-gray-700 mb-4">Bienvenido a Prime Cleaning</h1>
-                    <p className="text-base lg:text-xl md:text-m text-gray-700 mb-6">
+                    <h1 className="text-sm lg:text-4xl md:text-2xl font-bold text-gray-700 mb-4">Bienvenido a Prime Cleaning</h1>
+                    <p className="text-sm lg:text-xl md:text-m text-gray-700 mb-6">
                         Tu empresa de limpieza de confianza, comprometida con la excelencia y el cuidado de cada detalle. Con un equipo profesional y productos de alta calidad, garantizamos espacios impecables para tu hogar o negocio. Déjanos encargarnos de la limpieza, tú solo disfruta del resultado.
                     </p>
-                    <a href="#contact" className="text-base p-2 bg-yellow-500 text-white lg:py-3 md:py-2 lg:px-6 md:px-4 lg:text-lg md:text-m rounded-lg shadow-md hover:bg-yellow-700 transition">
+                    <a href="#contact" className="text-sm p-2 bg-yellow-500 text-white lg:py-3 md:py-2 lg:px-6 md:px-4 lg:text-lg md:text-m rounded-lg shadow-md hover:bg-yellow-700 transition">
                         Solicita un presupuesto
                     </a>
                 </div>
@@ -62,7 +62,7 @@ const HeroSection = () => {
                             {images.map((src, index) => (
                                 <motion.div
                                     key={index}
-                                    className="min-w-[250px] mx-2 p-2 bg-white rounded-lg shadow-lg"
+                                    className="min-w-[120px] mx-2 p-1 bg-white rounded-lg shadow-lg"
                                     whileTap={{ scale: 0.5 }}
                                 >
                                     <img src={src} alt={`Limpieza ${index + 1}`} className="rounded-lg" />
