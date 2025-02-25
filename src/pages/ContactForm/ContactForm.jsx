@@ -28,7 +28,11 @@ const ContactForm = () => {
 
             <div>
                 <h2 className="text-xl pt-10 lg:pt-20 lg:text-4xl md:text-2xl font-bold text-gray-800text-3xl mb-4 text-center md:pb-10 lg:pb-10">Contáctanos</h2>
-                <form className="max-w-lg mx-auto md:space-y-6 lg:space-y-6 space-y-2">
+                <form
+                    className="max-w-lg mx-auto md:space-y-6 lg:space-y-6 space-y-2"
+                    action="https://formspree.io/f/mrbewjgd"
+                    method="POST"
+                >
                     <label htmlFor="name" className="block lg:text-xl md:text-m pb-1 text-sm">Nombre</label>
                     <input type="text" id="name" name="name" className="w-[80%] lg:w-full md:w-l p-4 border border-gray-300 rounded bg-amber-50" required />
 
