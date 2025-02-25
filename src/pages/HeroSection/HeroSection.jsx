@@ -35,6 +35,7 @@ const HeroSection = () => {
                                 src="limpieza9.jpg"
                                 alt="Servicio de limpieza"
                                 className="w-3/4 md:w-full max-w-md md:max-w-none max-h-[100vh] shadow-lg object-cover"
+                                loading="lazy"
                             />
                         </div>
                     </>
@@ -65,7 +66,7 @@ const HeroSection = () => {
                                     className="min-w-[120px] mx-2 p-1 bg-white rounded-lg shadow-lg"
                                     whileTap={{ scale: 0.5 }}
                                 >
-                                    <img src={src} alt={`Limpieza ${index + 1}`} className="rounded-lg" />
+                                    <img src={src} alt={`Limpieza ${index + 1}`} className="rounded-lg" loading="lazy" />
                                 </motion.div>
                             ))}
                         </motion.div>

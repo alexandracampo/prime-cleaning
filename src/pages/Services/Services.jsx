@@ -25,6 +25,7 @@ const Services = () => {
                         src="limpieza2.jpg"
                         alt="Servicio de limpieza"
                         className="md:w-full max-w-md md:max-w-none shadow-lg object-cover"
+                        loading="lazy"
                     />
                 </div>}
 

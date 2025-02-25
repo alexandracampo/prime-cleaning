@@ -23,6 +23,7 @@ const ContactForm = () => {
                         src='contact.jpg'
                         alt="Servicio de limpieza"
                         className="h-[calc(100vh)] w-3/4 md:w-full max-w-md md:max-w-none  shadow-lg object-cover"
+                        loading="lazy"
                     ></img>
                 </div>}
 

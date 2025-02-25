@@ -26,7 +26,7 @@ const Navbar = () => {
                 {isMobile &&
                     <>
                         <button className={menuOpen ? 'w-12 hover:cursor-pointer' : 'w-8 hover:cursor-pointer'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <img src={menuOpen ? 'cross.png' : 'menu.png'} />
+                            <img src={menuOpen ? 'cross.png' : 'menu.png'} loading="lazy" />
                         </button>
                     </>
                 }
