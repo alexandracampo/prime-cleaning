@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import useScreenWidth from '../../hooks/useScreenWidth'
-import iconMenu from '../../../public/menu.png'
 import Menu from './components/menu';
 
 const Navbar = () => {
@@ -19,7 +18,7 @@ const Navbar = () => {
                         onClick={() => {
                             document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
                         }}
-                        src='/prime-cleaning/public/logo.jpg'
+                        src='logo.JPG'
                         className="w-40 md:w-40 lg:w-48 md:mt-2 lg:mt-0" />
                 </div>
 
@@ -27,7 +26,7 @@ const Navbar = () => {
                 {isMobile &&
                     <>
                         <button className={menuOpen ? 'w-12 hover:cursor-pointer' : 'w-8 hover:cursor-pointer'} onClick={() => setMenuOpen(!menuOpen)}>
-                            <img src={menuOpen ? '/prime-cleaning/public/cross.png' : '/prime-cleaning/public/menu.png'} />
+                            <img src={menuOpen ? 'cross.png' : 'menu.png'} />
                         </button>
                     </>
                 }

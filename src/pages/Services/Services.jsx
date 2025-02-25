@@ -13,7 +13,7 @@ const Services = () => {
             id="services"
             className="h-[calc(100vh)] bg-gray-100 grid grid-cols-1 md:grid-cols-2  items-center text-center p-8 md:p-0"
             style={isMobile ? {
-                backgroundImage: `url('/prime-cleaning/public/servicesBG.png')`,
+                backgroundImage: `url('servicesBG.png')`,
                 backgroundSize: 'cover',
             } : {}}
         >
@@ -22,7 +22,7 @@ const Services = () => {
             {!isMobile &&
                 <div className="flex justify-center h-[calc(100vh)]">
                     <img
-                        src="/prime-cleaning/public/limpieza2.jpg"
+                        src="limpieza2.jpg"
                         alt="Servicio de limpieza"
                         className="md:w-full max-w-md md:max-w-none shadow-lg object-cover"
                     />

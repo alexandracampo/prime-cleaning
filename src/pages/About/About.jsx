@@ -14,7 +14,7 @@ const About = () => {
             id="about"
             className="h-[calc(100vh)] bg-gray-200 flex flex-col justify-center items-center p-8"
             style={isMobile ? {
-                backgroundImage: `url('/prime-cleaning/public/nosotrosBG.png')`,
+                backgroundImage: `url('nosotrosBG.png')`,
                 backgroundSize: 'cover',
             } : {}}
         >

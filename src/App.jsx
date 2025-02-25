@@ -11,7 +11,7 @@ import Footer from './pages/Footer/Footer'
 function App() {
 
   return (
-    <div className="">
+    <div>
       <Navbar />
       <HeroSection />
       <Services />

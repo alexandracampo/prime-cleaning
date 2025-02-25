@@ -13,14 +13,14 @@ const ContactForm = () => {
             id="contact"
             className="h-[calc(100vh-7rem)] bg-gray-100 grid grid-cols-1 md:grid-cols-2 items-center text-center"
             style={isMobile ? {
-                backgroundImage: `url('/prime-cleaning/public/contactBG.png')`,
+                backgroundImage: `url('contactBG.png')`,
                 backgroundSize: 'cover',
             } : {}}
         >
             {!isMobile &&
                 <div className="flex justify-center">
                     <img
-                        src="/prime-cleaning/public/contact.jpg"
+                        src='contact.jpg'
                         alt="Servicio de limpieza"
                         className="h-[calc(100vh-7rem)] w-3/4 md:w-full max-w-md md:max-w-none  shadow-lg object-cover"
                     ></img>
