@@ -1,6 +1,11 @@
 # Prime Cleaning 🧼🧴🧹🧺
 
-Prime Cleaning es una página web para una empresa de limpieza. El proyecto está construido con Vite para un desarrollo rápido y eficiente, y utiliza Tailwind CSS para un diseño moderno, atractivo y minimalista.
+Prime Cleaning es una página web para una empresa de limpieza. El proyecto está construido con Vite porque es rápido, ligero y arranca en un suspiro!
+
+## 🎯 Objetivo del proyecto
+
+El propósito principal de este proyecto es **aprender y practicar el uso de Tailwind CSS**.  
+No está orientado a producción, sino a reforzar conocimientos y experimentar con esta tecnología.
 
 ## Tecnologías
 
