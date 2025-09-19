@@ -6,7 +6,13 @@ const Menu = ({ menuOpen, isMobile, setMenuOpen }) => {
         <>
             <nav
                 className={`bg-white z-40 p-4 
-                ${isMobile ? (menuOpen ? "opacity-70 w-full pt-8 pr-5" : "top-40 opacity-0") : "relative opacity-100 top-0 flex justify-end"}`}
+                ${isMobile
+                        ?
+                        (menuOpen
+                            ? "opacity-70 w-full pt-8 pr-5"
+                            : "top-40 opacity-0")
+                        :
+                        "relative opacity-100 top-0 flex justify-end"}`}
             >
                 <ul
                     className={`flex ${isMobile ? "flex-col items-end" : "space-x-8"}`}

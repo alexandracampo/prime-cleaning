@@ -14,7 +14,6 @@ const Footer = () => {
                     (<p>&copy; 2025 Prime Cleaning | Created by Alexandra Campo 💖</p>)
 
             }
-            <p>Carrer Pont, 7. Palma, Illes Balears.</p>
         </footer>
     )
 }
